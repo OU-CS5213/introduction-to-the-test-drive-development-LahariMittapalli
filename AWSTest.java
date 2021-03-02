@@ -128,6 +128,23 @@ class AWSTest {
 		int[] result= aws.getValues();
 		assertEquals(expected, result[0]);
 	}
+        @Test
+	void testremoveBiggerThan() {
+		int threshold =2;
+		int[] org = originalAWS.getValues();
+		int expCount = 1;
+		int expected = FILLER_VALUE;
+		
+		int resCount= originalAWS.removeBiggerThan(threshold);
+		
+		int[] resValues= originalAWS.getValues();
+		
+		assertEquals(expCount, resCount);
+		assertEquals(expected, resValues[2]);
+		
+		
+  
+	}
 
 
 
