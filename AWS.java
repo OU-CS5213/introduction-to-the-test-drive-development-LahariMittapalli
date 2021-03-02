@@ -55,5 +55,14 @@ public class AWS {
 		}
 		values = newArray;
 	}
+        public void multiplication() {
+		for(int i=0; i<values.length;++i) {
+			if(values[i]<10) {
+				values[i]=values[i]*4;
+			}
+			
+		}
+          
+	}
 
-}
+
