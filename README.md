@@ -17,4 +17,4 @@ You will make frequent commits:
 * [check] Create a method **removeBiggerThan(int threshold)** the AWS class that will remove all values bigger than a **threshold** that you send and return the number of removed values; use FILLER_VALUE to replace removed values
 * [check] Create unit tests for **removeBiggerThan(int threshold)**
 * [check] Create a method **stepMultiplier()** in the AWS class that will multiply all values less than 10 by 2, and all values that are less than 20 and bigger than 10 by 4, and all values that are less than 100 and bigger than 20 by 100;
-* [] Create a unit tests for **stepMultiplier()**
+* [check] Create a unit tests for **stepMultiplier()**
