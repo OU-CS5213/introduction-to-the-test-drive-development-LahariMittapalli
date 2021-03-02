@@ -122,7 +122,7 @@ class AWSTest {
         void testMultiplication() {
 		int[] x= {3,15};
 		AWS aws=new AWS(x);
-		int expected=3*2;
+		int expected=3*4;
 		
 		aws.multiplication();
 		int[] result= aws.getValues();
