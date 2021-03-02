@@ -74,7 +74,13 @@ public class AWS {
 			}
 		}
 		return count;
+	
+        }
+        public void multiplication() {
+	
+
 	}
+
 }
 
 
