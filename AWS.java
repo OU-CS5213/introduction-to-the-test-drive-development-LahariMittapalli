@@ -76,7 +76,7 @@ public class AWS {
 		return count;
 	
         }
-        public void multiplication() {
+        public void stepMultiplier() {
 	
 
 	}
