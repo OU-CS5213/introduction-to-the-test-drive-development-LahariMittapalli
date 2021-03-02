@@ -64,6 +64,10 @@ public class AWS {
 		}
           
 	}
+        public int removeBiggerThan(int threshold) {
+
+			return count;
+		}
 
 }
 
