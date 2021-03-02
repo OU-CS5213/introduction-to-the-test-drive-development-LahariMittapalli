@@ -66,10 +66,18 @@ public class AWS {
 	}
         public int removeBiggerThan(int threshold) {
 
-			return count;
+		int count =0;
+		for(int i=1;i<values.length; ++i) {
+			if(values[i]>threshold) {
+				count +=1;
+				values[i]=FILLER_VALUE;
+			}
 		}
-
+		return count;
+	}
 }
+
+
 
 
 
