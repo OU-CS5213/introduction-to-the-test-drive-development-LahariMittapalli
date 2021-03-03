@@ -16,23 +16,23 @@ class AWSTest {
 
 	@Test
 	void testGetValues() {
-                int[] x= {1,2,3};
-		AWS aws=new AWS(x);
+                int[] arr= {1,2,3};
+		AWS aws=new AWS(arr);
 		int[] result=aws.getValues();
-		assertEquals(result[0], x[0]);
+		assertEquals(result[0], arr[0]);
                 //fail("Not yet implemented");
 	}
 
 	@Test
 	void testSetValues() {
-                int x[] = {1,2,3};
-		int y[]= {4,5,6};
-		AWS aws=new AWS(x);
-		aws.setValues(y);
+                int a[] = {5,6,7};
+		int b[]= {3,4,5};
+		AWS aws=new AWS(a);
+		aws.setValues(b);
 		int[] result=aws.getValues();
-		assertEquals(result[0], y[0]);
-		assertEquals(result[2], y[2]);
-		assertEquals(result.length, y.length);
+		assertEquals(result[0], b[0]);
+		assertEquals(result[2], b[2]);
+		assertEquals(result.length, b.length);
                 //fail("Not yet implemented");
 	}
 
