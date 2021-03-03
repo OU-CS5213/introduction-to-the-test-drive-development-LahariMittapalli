@@ -47,6 +47,8 @@ class AWSTest {
 		String expected = "AWS [values=[1, 2, 3]]";
 		String result= aws.toString();
 		assertEquals(result,expected);
+
+
                 //fail("Not yet implemented");
 	}
 
