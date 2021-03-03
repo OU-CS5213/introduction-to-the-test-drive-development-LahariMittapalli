@@ -20,6 +20,9 @@ class AWSTest {
 		AWS aws=new AWS(arr);
 		int[] result=aws.getValues();
 		assertEquals(result[0], arr[0]);
+                assertEquals(result[1], arr[1]);
+                assertEquals(result[2], arr[2]);
+                assertEquals(result.length, arr.length);
                 //fail("Not yet implemented");
 	}
 
@@ -31,6 +34,7 @@ class AWSTest {
 		aws.setValues(b);
 		int[] result=aws.getValues();
 		assertEquals(result[0], b[0]);
+		assertEquals(result[1], b[1]);
 		assertEquals(result[2], b[2]);
 		assertEquals(result.length, b.length);
                 //fail("Not yet implemented");
@@ -40,7 +44,7 @@ class AWSTest {
 	void testToString(){
                 int[] x={1,2,3};
                 AWS aws=new AWS(x);
-		String expected = "AWS [values=[1,2,3]]";
+		String expected = "AWS [values=[1, 2, 3]]";
 		String result= aws.toString();
 		assertEquals(result,expected);
                 //fail("Not yet implemented");
