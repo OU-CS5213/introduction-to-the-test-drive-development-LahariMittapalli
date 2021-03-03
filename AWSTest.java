@@ -148,7 +148,6 @@ class AWSTest {
         @Test
 	void testremoveBiggerThan() {
 		int threshold =2;
-		int[] org = originalAWS.getValues();
 		int expCount = 1;
 		int expected = FILLER_VALUE;
 		
