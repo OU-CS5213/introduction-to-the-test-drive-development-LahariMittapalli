@@ -11,7 +11,7 @@ You will make frequent commits:
 * Write your code to pass the test
 * Commit to GitHub
 ## Part 2
-* [ ] Create a GitHub action to run your tests from Part 1
+* [check] Create a GitHub action to run your tests from Part 1
 ## Part 3 
 * [check] You will use the TDD technique for this part, remember to create a test before you implement the method; commit to GitHub every working change you make
 * [check] Create a method **removeBiggerThan(int threshold)** the AWS class that will remove all values bigger than a **threshold** that you send and return the number of removed values; use FILLER_VALUE to replace removed values
