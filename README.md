@@ -3,7 +3,7 @@
 
 Try to *check* the *checkboxes* as you go, and commit changes to the Readme.md as well.
 
-## Part 1
+## Part 1 [check]
 There are a few tests that are not finished. And so, you will have a few tasks here.
 You will make frequent commits:
 * Create one test, and make sure it fails
@@ -18,3 +18,6 @@ You will make frequent commits:
 * [check] Create unit tests for **removeBiggerThan(int threshold)**
 * [check] Create a method **stepMultiplier()** in the AWS class that will multiply all values less than 10 by 2, and all values that are less than 20 and bigger than 10 by 4, and all values that are less than 100 and bigger than 20 by 100;
 * [check] Create a unit tests for **stepMultiplier()**
+
+
+Discussed regarding git actions and test methods with Aliya Shaikh
