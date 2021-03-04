@@ -16,17 +16,40 @@ class AWSTest {
 
 	@Test
 	void testGetValues() {
-		fail("Not yet implemented");
+                int[] arr= {1,2,3};
+		AWS aws=new AWS(arr);
+		int[] result=aws.getValues();
+		assertEquals(result[0], arr[0]);
+                assertEquals(result[1], arr[1]);
+                assertEquals(result[2], arr[2]);
+                assertEquals(result.length, arr.length);
+                //fail("Not yet implemented");
 	}
 
 	@Test
 	void testSetValues() {
-		fail("Not yet implemented");
+                int a[] = {5,6,7};
+		int b[]= {3,4,5};
+		AWS aws=new AWS(a);
+		aws.setValues(b);
+		int[] result=aws.getValues();
+		assertEquals(result[0], b[0]);
+		assertEquals(result[1], b[1]);
+		assertEquals(result[2], b[2]);
+		assertEquals(result.length, b.length);
+                //fail("Not yet implemented");
 	}
 
 	@Test
-	void testToString() {
-		fail("Not yet implemented");
+	void testToString(){
+                int[] x={1,2,3};
+                AWS aws=new AWS(x);
+		String expected = "AWS [values=[1, 2, 3]]";
+		String result= aws.toString();
+		assertEquals(result,expected);
+
+
+                //fail("Not yet implemented");
 	}
 
 	@Test
@@ -102,7 +125,7 @@ class AWSTest {
 		int[] org = originalAWS.getValues();
 		int expectedValue = org[position];
  		int first = org[0];
-		int expected = originalAWS.getValues().length + numberOfTimes;
+		int expected = originalAWS.getValues().length + Math.abs(numberOfTimes);
 		originalAWS.fillAndExpand(position, numberOfTimes);
 		int[] result = originalAWS.getValues();
 		assertEquals(expected, result.length);
@@ -118,6 +141,47 @@ class AWSTest {
 
 	
 	}
+	@Test
+        void testMultiplication() {
+		int[] x= {3,15};
+		AWS aws=new AWS(x);
+		int expected=3*4;
+		
+		aws.multiplication();
+		int[] result= aws.getValues();
+		assertEquals(expected, result[0]);
+	}
+        @Test
+	void testremoveBiggerThan() {
+		int threshold =2;
+		int expCount = 1;
+		int expected = FILLER_VALUE;
+		
+		int resCount= originalAWS.removeBiggerThan(threshold);
+		
+		int[] resValues= originalAWS.getValues();
+		
+		assertEquals(expCount, resCount);
+		assertEquals(expected, resValues[2]);
+		
+		
+  
+	}
+        @Test
+	void teststepMultiplier() {
+		int[] x= {3,17,50};
+		AWS aws = new AWS(x);
+		int exp1 = 3*2;
+		int exp2 = 17*4;
+		int exp3 = 50*100;
+		
+		aws.stepMultiplier();
+		int[] result = aws.getValues();
+		assertEquals(exp1, result[0]);
+		assertEquals(exp2, result[1]);
+		assertEquals(exp3, result[2]);
+	}
+
 
 
 }
